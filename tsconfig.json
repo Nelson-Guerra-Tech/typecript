@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "ES5",
+        "outDir": "./chapter1/sandbox.js",
+        "rootDir": "./chapter1/sandbox.ts"
+    }
+}
