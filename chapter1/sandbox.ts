@@ -27,3 +27,26 @@ const funk = (num: number) =>{
 
 console.log(funk(2));
 
+const greetings = (person: string = 'Stranger') =>{
+    console.log(`This is ${person}`);
+}
+
+greetings('Nelson');
+
+
+// using the return type to a function, after the parenthesis.
+// TS can guess the type of the return of a function is the parameters are of one type
+const addNums = (x: number, y: number): number =>{
+    return x * y;
+}
+
+const colored = ['red', 'orange', 'yellow'];
+colored.map((color)=>{
+    return color.toUpperCase();
+})
+
+console.log(colored);
+
+
+
+

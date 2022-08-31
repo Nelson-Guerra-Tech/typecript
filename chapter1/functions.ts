@@ -1,5 +1,7 @@
 // Function parameter type annotations:
 const doSomething = (person: string, age: number, isFunny: boolean) => {};
+console.log(doSomething('Nelson', 28, true));
+
 
 // Return type annotation:
 function greet(person: string = "stranger"): string {
@@ -41,3 +43,4 @@ function gameLoop(): never {
     console.log("GAME LOOP RUNNING!");
   }
 }
+

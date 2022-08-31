@@ -1,5 +1,6 @@
 // Function parameter type annotations:
 var doSomething = function (person, age, isFunny) { };
+console.log(doSomething('Nelson', 28, true));
 // Return type annotation:
 function greet(person) {
     if (person === void 0) { person = "stranger"; }

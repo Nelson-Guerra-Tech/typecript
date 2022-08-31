@@ -20,3 +20,18 @@ var funk = function (num) {
     return num * num;
 };
 console.log(funk(2));
+var greetings = function (person) {
+    if (person === void 0) { person = 'Stranger'; }
+    console.log("This is ".concat(person));
+};
+greetings('Nelson');
+// using the return type to a function, after the parenthesis.
+// TS can guess the type of the return of a function is the parameters are of one type
+var addNums = function (x, y) {
+    return x * y;
+};
+var colored = ['red', 'orange', 'yellow'];
+colored.map(function (color) {
+    return color.toUpperCase();
+});
+console.log(colored);
