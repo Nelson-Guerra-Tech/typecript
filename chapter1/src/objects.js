@@ -34,3 +34,16 @@ var calculatePayout = function (song) {
     return song.numStreams * 0.0033;
 };
 console.log('$' + Math.floor(calculatePayout(mySong)));
+// creating a variable that holds this new object
+var happyFace = {
+    radius: 4,
+    color: 'Blue'
+};
+console.log(happyFace);
+var Luna = {
+    numLives: 1,
+    breed: 'Labrador',
+    age: 10
+};
+console.log(Luna);
+// 

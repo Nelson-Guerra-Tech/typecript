@@ -21,6 +21,7 @@ console.log(funks());
 printName({first: 'Nick', last: 'Cage'});
 
 
+
 // !type alias
 // creating a type alias to resuse in a function later on
 type Point = {
@@ -42,6 +43,7 @@ type Song = {
     artist: string,
     numStreams: number,
     credits: {
+
         producer: string,
         writer: string
     }
@@ -64,10 +66,45 @@ return song.numStreams * 0.0033;
 
 console.log('$'+ Math.floor(calculatePayout(mySong)));
 
-console.log('hello');
+// intersection types
+type Circle = {
+    radius: number;
+}
+
+type Colorful = {
+    color: string;
+}
+
+// combining multiple types into one type
+type ColorfulCircle = Circle & Colorful;
+
+// creating a variable that holds this new object
+const happyFace: ColorfulCircle = {
+    radius: 4,
+    color: 'Blue'
+}
+console.log(happyFace);
 
 
+// another intersection type exercise
+type Cat = {
+    numLives: number
+}
 
+type Dog = {
+    breed: string
+}
 
+type CatDog = Cat & Dog & {
+    age: number
+}
 
+const Luna: CatDog = {
+    numLives: 1,
+    breed: 'Labrador',
+    age: 10
+}
 
+console.log(Luna);
+
+// 
