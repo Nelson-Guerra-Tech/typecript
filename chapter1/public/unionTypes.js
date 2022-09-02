@@ -1,16 +1,17 @@
+"use strict";
 // Basic Union Type:
-var aged = 21;
+let aged = 21;
 aged = 23;
 aged = "24";
 // Union type with type aliases
-var coordinates = { x: 1, y: 34 };
+let coordinates = { x: 1, y: 34 };
 coordinates = { lat: 321.213, long: 23.334 };
 // Function parameter union type:
 function printAge(age) {
-    console.log("You are ".concat(age, " years old"));
+    console.log(`You are ${age} years old`);
 }
-var agePrint = function (age) {
-    console.log("You are ".concat(age, " years old"));
+const agePrint = (age) => {
+    console.log(`You are ${age} years old`);
 };
 console.log(agePrint(28));
 // type narrowing, where we can have a conditional statement to check if the parameter is a number or a string
@@ -26,13 +27,13 @@ console.log(calculateTax('100', .2));
 // const stuff: (number | string)[] = [1,2,3, "das"]
 // const stuff: number[] | string[] = ["asd", "asd", 1]
 // adding more than one type to an array. But does not hold all types
-var stuff = [];
+const stuff = [];
 // Union Type With Arrays
-var coords = [];
+const coords = [];
 coords.push({ lat: 321.213, long: 23.334 });
 coords.push({ x: 213, y: 43 });
 // Literal Types
-var zero = 0;
-var mood = "Happy";
+let zero = 0;
+let mood = "Happy";
 mood = "Sad";
-var today = "Sunday";
+let today = "Sunday";

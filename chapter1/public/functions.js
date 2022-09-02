@@ -1,10 +1,10 @@
+"use strict";
 // Function parameter type annotations:
-var doSomething = function (person, age, isFunny) { };
+const doSomething = (person, age, isFunny) => { };
 console.log(doSomething('Nelson', 28, true));
 // Return type annotation:
-function greet(person) {
-    if (person === void 0) { person = "stranger"; }
-    return "Hi there, ".concat(person, "!");
+function greet(person = "stranger") {
+    return `Hi there, ${person}!`;
 }
 function square(num) {
     return num * num;
@@ -13,12 +13,12 @@ square(3);
 greet("Tonya Harding");
 doSomething("ChickenFace", 78, true);
 // Arrow function:
-var add = function (x, y) {
+const add = (x, y) => {
     return x + y;
 };
 // Contextual Type Clues
-var colors = ["red", "orange", "yellow"];
-colors.map(function (color) {
+const colors = ["red", "orange", "yellow"];
+colors.map((color) => {
     return color.toUpperCase();
 });
 // Void
